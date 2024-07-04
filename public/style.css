@@ -1,0 +1,137 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+button[type="submit"] {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #8fe3e9;
+}
+
+button .loupe {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.weather-box {
+    /* background-color: #fff; */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.weather-box h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.weather-box p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.weather-box .temperature {
+    font-size: 70px;
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.weather-box .city {
+    text-transform: uppercase;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+    margin: 100px auto;
+    padding: 40px 35px;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    font-family: 'weather';
+    font-size: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'weather';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
